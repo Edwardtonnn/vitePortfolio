@@ -11,6 +11,7 @@ import Mangan from './Mangan'
 import ShipAndShore from './ShipAndShore'
 import CheefBotanicals from './CheefBotanicals'
 import Privacy from './Privacy'
+import DeleteData from './DeleteData'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path:"/privacy",
     element:(<Privacy/>)
+  },
+  {
+    path:"/delete",
+    element:(<DeleteData/>)
   }
 ])
 

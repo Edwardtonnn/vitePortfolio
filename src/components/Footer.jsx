@@ -1,5 +1,6 @@
 import React from 'react'
 import GoogleMapEmbed from './GoogleMapEmbed'
+import Socials from './Socials'
 
 
 
@@ -35,18 +36,13 @@ function footer() {
                 <div className="col-lg-4 col-md-12 my-3 p-3 ">
                 <p class="text-white fw-normal">Contact</p>
                     <ul class="text-white list-unstyled">
-                        <li>More about me at<a target="_blank" href="https://edwardtonnn.com/"> Edwardtonnn.com</a>
+                        <li>More about me at<a target="_blank" href="https://edwardtonnn.com/"> Edwardtonnn.com</a>. Thanks!
                         </li>
                        
                        
                     </ul>
                     <div class="container-social-footer ">                            
-                        <a href="https://www.instagram.com/edwardtonnn.dev/" target="_blank">
-                            <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
-                        </a>
-                        <a href="https://www.linkedin.com/in/edwardtonnn" target="_blank">
-                            <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
-                        </a>                           
+                      <Socials/>                   
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-12 my-3 p-3 ">

@@ -5,6 +5,7 @@ import resume from '/images/2023EdwardGSingleton.pdf'
 import RecentWorks from './RecentWorks'
 import Portfolio from './Portfolio'
 import WorkExperience from './WorkExperience'
+import Socials from './Socials'
 
 
 
@@ -24,12 +25,7 @@ function Homepage() {
                         <div className="socials">
                             <span className="text-white text-browse">Browse My Socials</span>
                             <div className="icon-wrapper">
-                                <a href="https://www.instagram.com/edwardtonnn.dev/" target="_blank">
-                                    <ion-icon name="logo-instagram" role="img" className="md hydrated" aria-label="logo instagram"></ion-icon>
-                                </a>
-                                <a href="https://www.linkedin.com/in/edwardtonnn" target="_blank">
-                                    <ion-icon name="logo-linkedin" role="img" className="md hydrated" aria-label="logo linkedin"></ion-icon>
-                                </a>
+                               <Socials/>
                             </div>
                         </div>
                             <img className="img-fluid rounded-circle" src={headshot} alt="Headshot Img" width={'250px'} />

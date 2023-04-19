@@ -2,6 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import {Link} from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+import Socials from "./Socials"
+import { ScrollTrigger } from 'gsap/all';
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 const Header = () => {
@@ -12,11 +16,29 @@ const Header = () => {
 
   let mOpen = useRef(null);
   let mClose = useRef(null);
-  // let mLinks = useRef(null);
+ const navbarRef = useRef(null)
 
-  useEffect(() => {   
+  useEffect(() => {  
+    
+    const showNav = gsap.fromTo(navbarRef.current,
+      {
+        opacity:0
+      },
+      {
+        opacity:1,
+        duration:0.4
+      }).progress(1);
+      ScrollTrigger.create({
+        start:"top top",
+        end:"max",
+        onUpdate:(self)=>{
+          self.direction === -1 ?
+          showNav.play()
+          : showNav.reverse()
+        }
+      })
 
-    let tll = new gsap.timeline();     
+    let tll = new gsap.timeline();  
 
     mOpen.addEventListener('click', () => {
 
@@ -58,8 +80,7 @@ const Header = () => {
       .to('.menu',0,{
         visibility:'hidden'
         
-      })
-     
+      })     
     });
 
   
@@ -70,7 +91,7 @@ const Header = () => {
 
   return (
     <>
-    <div className="container-fluid nav-wrapper">        
+    <div className="container-fluid nav-wrapper navbar" ref={navbarRef}>        
       <div className="row py-4">
         <div className="col-6">
         <Link to="/" onClick={ScrollToTop}>
@@ -122,12 +143,7 @@ const Header = () => {
                     <div className="text-contact-content">+1(323)365-7776</div>
                   </div>
                   <div className="socials">
-                  <a href="https://www.instagram.com/edwardtonnn.dev/" target="_blank" >
-                    <ion-icon name="logo-instagram" role="img" className="md hydrated" aria-label="logo instagram"></ion-icon>
-                </a>
-                <a href="https://www.linkedin.com/in/edwardtonnn" target="_blank" >
-                    <ion-icon name="logo-linkedin" role="img" className="md hydrated" aria-label="logo linkedin"></ion-icon>
-                </a>  
+                  <Socials/> 
                   </div>
                 </div>
               </div>

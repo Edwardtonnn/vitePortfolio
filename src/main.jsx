@@ -10,6 +10,7 @@ import {
 import Mangan from './Mangan'
 import ShipAndShore from './ShipAndShore'
 import CheefBotanicals from './CheefBotanicals'
+import Privacy from './Privacy'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path:"/cheefbotanicals",
     element:(<CheefBotanicals/>)
+  },
+  {
+    path:"/privacy",
+    element:(<Privacy/>)
   }
 ])
 

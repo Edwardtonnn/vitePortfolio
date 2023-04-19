@@ -10,9 +10,7 @@ import Socials from './Socials'
 
 
 function Homepage() {
-    const ScrollToTop = () => {
-        window.scrollTo(0, 0);
-      };
+ 
 
     return (
         <>

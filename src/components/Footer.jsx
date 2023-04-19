@@ -1,11 +1,16 @@
 import React from 'react'
 import GoogleMapEmbed from './GoogleMapEmbed'
 import Socials from './Socials'
+import {Link} from "react-router-dom";
 
 
 
 
 function footer() {
+    const ScrollToTop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      };
+
   return (
    <>
    <footer className="container-fluid py-5">
@@ -47,7 +52,7 @@ function footer() {
                 </div>
                 <div className="col-lg-4 col-md-12 my-3 p-3 ">
                     <p className="text-white fw-normal">Details</p>
-                    <p className="text-white">This portfolio was built using <a href="https://vitejs.dev/" target="_blank">Vite.JS</a>, <a href="https://react.dev/" target="_blank">React</a> and <a href="https://greensock.com/" target="_blank">GSAP.JS</a> </p>
+                    <p className="text-white">This portfolio was built using <a href="https://vitejs.dev/" target="_blank">Vite.JS</a>, <a href="https://react.dev/" target="_blank">React</a> and <a href="https://greensock.com/" target="_blank">GSAP.JS</a> View <Link onClick={ScrollToTop} to="/privacy">Privacy Policy</Link></p>
                 </div>
                 <div className="col-lg-4 col-md-12 my-3 p-3 ">
                 <div className=" d-flex flex-column location-wrapper">                    

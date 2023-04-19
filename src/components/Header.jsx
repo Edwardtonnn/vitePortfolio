@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import {Link} from "react-router-dom";
-import { useLocation } from 'react-router-dom';
 import Socials from "./Socials"
 import { ScrollTrigger } from 'gsap/all';
 
@@ -11,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Header = () => {
 
   const ScrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   };
 
   let mOpen = useRef(null);

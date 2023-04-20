@@ -35,7 +35,7 @@ const router = createBrowserRouter([
     element:(<Privacy/>)
   },
   {
-    path:"/delete",
+    path:"/deletedata",
     element:(<DeleteData/>)
   }
 ])

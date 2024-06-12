@@ -137,7 +137,7 @@ const Header = () => {
                 <div className="spacer"></div>
                 <div className="contact">
                   <div className="mail">
-                    <h6 className="text-contact-title">Contact</h6>
+                    <h5 className="text-contact-title">Contact</h5>
                     <div className="text-contact-content">Edwardtonnn@gmail.com</div>
                     <div className="text-contact-content">+1(323)365-7776</div>
                   </div>

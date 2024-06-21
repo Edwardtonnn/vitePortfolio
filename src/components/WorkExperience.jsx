@@ -63,49 +63,8 @@ function WorkExperience() {
 
             </div>
         </div>
-        <div className="row my-5">
-            <div className="col-lg-12 text-center">
-
-                    <h3 className="text-white spacer-title">Clients</h3>
-                    <img className="hr" src="images/signature-hr2-02.svg" alt="Work Experience HR" />
-            </div>     
-               
-        </div>
-       
-        <div className="row my-5">
-        <div className="images-parent-container">
-                    <div className="item-client-logo ">
-                        <a href="https://www.anthelionhelicopters.com/" target="_blank"><img src="images/logoAnthelion.png" alt="Anthelion helicopters"/></a>
-                    </div>
-                   
-                    <div className="item-client-logo ">
-                        <a href="https://lairp.org/" target="_blank"><img src="images/logoLAIRP.png" alt="Los Angeles Institute for Restorative Practices"/></a>
-                    </div>
-                    <div className="item-client-logo ">
-                        <a href="https://lbwater.org/" target="_blank"><img src="images/logoLB.png" alt="Long Beach Water Department"/></a>
-                    </div>
-                    <div className="item-client-logo ">
-                        <a href="https://shipandshore.com/" target="_blank"><img src="images/logoSS.png" alt="Ship &amp; Shore Environmental"/></a>
-                    </div>
-                   
-                   
-                    <div className="item-client-logo ">
-                        <a href="https://hollyweedcbd.com/" target="_blank"><img src="images/hollyweed.png" alt="Hollyweed CBD"/></a>
-                    </div>
-                    <div className="item-client-logo ">
-                        <a href="https://cheefbotanicals.com/" target="_blank"><img src="images/cheef-logo-clients.png" alt="Cheef Botanicals"/></a>
-                    </div>
-                  
-                    <div className="item-client-logo ">
-                        <a href="https://www.alineinc.com/" target="_blank"><img src="images/aline.png" alt="Aline microfluidics"/></a>
-                    </div>
-                    <div className="item-client-logo ">
-                        <a href="https://www.fralock.com/" target="_blank"><img src="images/fralock.png" alt="Fralock solutions"/></a>
-                    </div>
-                </div>
-
-        </div>
-
+        
+  
         <div className="row instagram">
         
         <div class="elfsight-app-8f58b520-5acc-4c0f-a8f8-e339f016c65a" data-elfsight-app-lazy></div>

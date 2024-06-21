@@ -105,6 +105,11 @@ function WorkExperience() {
                 </div>
 
         </div>
+
+        <div className="row instagram">
+        
+        <div class="elfsight-app-8f58b520-5acc-4c0f-a8f8-e339f016c65a" data-elfsight-app-lazy></div>
+        </div>
     </div>
     </>
   )

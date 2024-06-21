@@ -1146,3 +1146,19 @@ p.type{
     padding-bottom:15px
   }
 }
+
+.instagram{
+  position: relative;
+  &:after{
+    content: "" !important;
+    background: $dark-grey;
+    height: 54px;
+    position: absolute;
+    width: 300px;
+    display: block;
+    z-index: 10000000000000000000;
+    bottom: -2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

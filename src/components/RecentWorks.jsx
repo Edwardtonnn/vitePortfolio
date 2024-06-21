@@ -10,12 +10,12 @@ const RecentWorks = () => {
 
   // Recent Works 
   // LI hover background change 
-  const [currentImage, setCurrentImage] = useState('work1.jpg');
+  const [currentImage, setCurrentImage] = useState('work1.gif');
   const designsImage = useRef(null);
   const workList = useRef(null);
   const recentDesignsContainer = useRef(null);
 
-  const workImages = ['bgwork1.jpg', 'bgwork2.jpg', 'bgwork3.jpg', 'bgwork4.jpg', 'bgwork5.jpg'];
+  const workImages = ['bgwork1.jpg', 'bgwork2.jpg', 'bgwork3.jpg', 'bgwork4.jpg'];
 
   useEffect(() => {
     const listItems = workList.current.querySelectorAll('li');
@@ -58,32 +58,32 @@ const RecentWorks = () => {
             <img className="hr" src="images/signature-hr2-02.svg" alt="Recent Works HR" />
 
             <ul ref={workList} className="ul-recent-designs text-white list-unstyled work-list d-lg-block d-none">
-              <li id="work1.jpg">BMW Design</li>
-              <li id="work2.jpg">Givanni Interior Design</li>
-              <li id="work3.jpg">ClearVision Construction Co</li>
+              <li id="work1.gif">Modular Component Design</li>
+              <li id="work2.gif">Component Integration</li>
+              <li id="work3.gif">GSAP Timeline Reversal</li>
               <li id="work4.gif">Creative Experience</li>
-              <li id="work5.gif">Latin Grammys</li>
+             
             </ul>
 
 
             {/* Accordion Start  */}
             <Accordion className="d-lg-none d-block py-5" defaultActiveKey="0">
       <Accordion.Item  eventKey="0">
-        <Accordion.Header className="py-3">BMW Design</Accordion.Header>
+        <Accordion.Header className="py-3">Modular Component Design</Accordion.Header>
         <Accordion.Body className="py-3">
-         <img className="img-fluid" src="images/work1.jpg"/>
+         <img className="img-fluid" src="images/work1.gif"/>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Givanni Interior Design</Accordion.Header>
+        <Accordion.Header>Component Integration</Accordion.Header>
         <Accordion.Body>
-        <img className="img-fluid" src="images/work2.jpg"/>
+        <img className="img-fluid" src="images/work2.gif"/>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>ClearVision Construction Co</Accordion.Header>
+        <Accordion.Header>GSAP Timeline Reversal</Accordion.Header>
         <Accordion.Body>
-        <img className="img-fluid" src="images/work3.jpg"/>
+        <img className="img-fluid" src="images/work3.gif"/>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
@@ -92,12 +92,7 @@ const RecentWorks = () => {
         <img className="img-fluid" src="images/work4.gif"/>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>Latin Grammys</Accordion.Header>
-        <Accordion.Body>
-        <img className="img-fluid" src="images/work5.gif"/>
-        </Accordion.Body>
-      </Accordion.Item>
+      
     </Accordion>
             {/* Accordion End  */}
           </div>

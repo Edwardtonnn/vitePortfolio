@@ -40,9 +40,11 @@ function footer() {
             <div className="row d-flex align-items-center justify-content-center">                
                 <div className="col-lg-4 col-md-12 my-3 p-3 ">
                 <p class="text-white fw-normal">Contact</p>
-                    <ul class="text-white list-unstyled">
-                        <li>More about me at<a target="_blank" href="https://edwardtonnn.com/"> Edwardtonnn.com</a>. Thanks!
-                        </li>
+                    <ul class="text-white list-unstyled footer-contact">
+                        <li>Edward Giovannie Singleton</li>
+                        <li>Los Angeles, California</li>
+                        <li><a href="tel:323-365-7776">+1(323)365-7776</a></li>
+                        <li><a href="mailto:edwardtonnn@gmail.com">Edwardtonnn@gmail.com</a></li>
                        
                        
                     </ul>

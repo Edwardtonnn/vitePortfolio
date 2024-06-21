@@ -21,7 +21,6 @@ function Homepage() {
                         
                         <div className="container-main-img">
                         <div className="socials">
-                            <span className="text-white text-browse">Browse My Socials</span>
                             <div className="icon-wrapper">
                                <Socials/>
                             </div>
@@ -35,7 +34,7 @@ function Homepage() {
                         <h1 className="text-white mb-3">Front-End Developer</h1>
                         <p className="text-white text-intro-p mb-3">Hey there! Thanks for checking out my portfolio. I am a Front-End Developer &amp; Designer who works with HTML, CSS, JavaScript &amp; Adobe Suite to create stunning websites and graphic assets.</p>
                         <div className="btn-container">
-                            <a href="mailTo:edwardtonnn@gmail.com" className="btn btn-primary ">Email me</a>
+                            
                             <a href={resume} target="_blank" className="btn btn-primary ">View Resume</a>
                         </div>
                     </div>

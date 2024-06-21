@@ -154,6 +154,7 @@ li {
     top:0;
     left:0;
     z-index: 5;
+    padding:0 25px;
 
     * {
         color: white;
@@ -273,6 +274,7 @@ footer {
         display: grid;
         grid-template-rows: 1fr 2fr;
         padding: 5%;
+        background:url('/images/menu-bg-left.jpg');
 
         .menu-links {
             position: relative;
@@ -301,6 +303,7 @@ footer {
         display: grid;
         grid-template-rows: 1fr 2fr;
         padding: 5%;
+        background:url('/images/menu-bg-right.jpg');
 
         .contact {
             order: 3;
@@ -327,6 +330,14 @@ footer {
     z-index: 3;
     top: 30px;
     right: 25px;
+    font-size:3rem;
+    height:20px;
+    line-height:.5;
+
+    @media(max-width:1100px){
+     
+    }
+
 }
 
 .img-close-icon {
@@ -413,14 +424,7 @@ footer {
         }
 
         // Socials
-        span.text-browse {
-            position: absolute;
-            transform: rotate(-90deg);
-            white-space: nowrap;
-            left: -90px;
-            text-transform: uppercase;
-            // top:133px;
-        }
+      
         .icon-wrapper {
             display: flex;
             flex-flow: column;
@@ -549,7 +553,7 @@ footer {
 .container-recent-works{
     background: $dark-grey;
     // border:20px solid black;
-    padding:30px;
+    padding:0 35px;
     min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -570,13 +574,19 @@ footer {
 
     img.recentWorks{
         width:100%;
+        max-height:650px;
+        object-fit:contain;
     }
 
-    .work-list li {
-    position: relative;
-    padding:10px 0px 15px 0px;
-    margin-bottom:10px;
-  }
+    .work-list {
+      width:250px;
+     
+      li {
+        position: relative;
+        padding:10px 0px 15px 0px;
+        margin-bottom:10px;
+      }
+    }
   
   .work-list li::before {
     content: '';
@@ -601,91 +611,6 @@ img.hr{
     width:150px;
 }
 
-
-// UPDATED PORTFOLIO SECTION @ND HARD LEVEL
-// .port-wrapper{
-//     height:100vh;
-//     display:grid;
-   
-//     @media(max-width:1100px){
-//     grid-template-columns: 1fr;
-//     height:200vh;
-//     }
-
-//     span{
-//         color:white;
-//         margin-bottom:15px;
-
-//         &.title, &.subtitle{
-//             font-weight: 900!important;
-//         }
-//     }
-    
-
-//     .portfolio-item-1{
-//         background:url('/images/mangan-bg.jpg');
-//         background-size:cover;
-//         background-position: center center;
-//         border-right:15px solid black;
-//         @media(max-width:1100px){
-//         border-right:none;
-//         border-bottom:5px solid black;
-//         }
-
-//     }
-//     .portfolio-item-2{
-//         background:url('/images/sse-bg.jpg');
-//         background-size:cover;
-//         background-position: center center;
-//         border-right:15px solid black;
-//         @media(max-width:1100px){
-//             border-right:none;
-//             border-bottom:5px solid black;
-//             }
-    
-
-//     }
-//     .portfolio-item-3{
-//         background:url('/images/cheef-bg.jpg');
-//         background-size:cover;
-//         background-position: center center;
-
-//     }
-
-//     .port-container{
-//         display:flex;
-//         flex-flow:column;
-//         position: relative;
-//         justify-content: center;
-        
-//     }
-// }
-// .port-wrapper-sizing{
-//     grid-template-columns: 1fr 1fr 1fr;
-// transition: .5s ease;
-// @media(max-width:1100px){
-// grid-template-columns: 1fr;
-// }
-
-// }
-// .port-man{
-//     grid-template-columns: 2fr 1fr 1fr ;
-//     transition: .5s ease;
-// }
-// .port-sse{
-//     grid-template-columns: 1fr 2fr 1fr ;
-//     transition: .5s ease;
-// }
-// .port-cheef{
-//     grid-template-columns: 1fr 1fr 2fr ;
-//     transition: .5s ease;
-// }
-
-// .portfolio-item-1, 
-// .portfolio-item-2, 
-// .portfolio-item-3{
-//     padding:20px
-// } 
 
 .container-hz {
     min-height: 100vh;
@@ -882,6 +807,7 @@ img.signature-port {
     display: flex;
     flex-flow:column;
     justify-content: center;
+    padding:0 35px;
 }
 span.description-title{
     text-transform: uppercase;
@@ -1212,4 +1138,11 @@ p.type{
         display: flex;
         justify-content: center;
     }
+}
+
+.nav-contact,
+.footer-contact {
+  li {
+    padding-bottom:15px
+  }
 }

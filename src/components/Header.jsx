@@ -138,8 +138,15 @@ const Header = () => {
                 <div className="contact">
                   <div className="mail">
                     <h5 className="text-contact-title">Contact</h5>
-                    <div className="text-contact-content">Edwardtonnn@gmail.com</div>
-                    <div className="text-contact-content">+1(323)365-7776</div>
+                    
+                    <ul class="text-white list-unstyled nav-contact">
+                        <li>Edward Giovannie Singleton</li>
+                        <li>Los Angeles, California</li>
+                        <li><a href="tel:323-365-7776">+1(323)365-7776</a></li>
+                        <li><a href="mailto:edwardtonnn@gmail.com">Edwardtonnn@gmail.com</a></li>
+                       
+                       
+                    </ul>
                   </div>
                   <div className="socials">
                   <Socials/> 
@@ -147,7 +154,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div ref={el => (mOpen = el)} className="menu-open">menu</div>   
+            <div ref={el => (mOpen = el)} className="menu-open">=</div>   
               
          
           </div>

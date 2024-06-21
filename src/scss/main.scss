@@ -471,7 +471,7 @@ footer {
 // About Section 
 .container-abt{
    
-    min-height:100vh;
+    min-height:100%;
     background-attachment: fixed;
     height:100%;
     // background-image: url('/images/bgwork4.jpg');
@@ -1160,5 +1160,48 @@ p.type{
     bottom: -2rem;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+.logos{
+  white-space:nowrap;
+  padding:5rem 0;
+
+ 
+
+  .logos-slider {
+    animation: 30s slide infinite linear;
+
+    @media(max-width:850px){
+      animation: 15s slide infinite linear;
+    }
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    img {
+      height:150px;
+      margin:0 40px;
+
+      @media(max-width:850px){
+        height:100px;
+        margin:0 25px;
+      }
+    }
+  }
+}
+
+
+.image-carousel {
+  .images-parent-container {
+    animation: 15s slide infinite linear;
+  }
+}
+@keyframes slide {
+  from {
+transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }

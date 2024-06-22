@@ -7,8 +7,10 @@ function WorkExperience() {
         <div className="row my-5">
             <div className="col-lg-12">
 
-                    <h3 className="text-white spacer-title">Work Experience</h3>
-                    <img className="hr" src="images/signature-hr2-02.svg" alt="Work Experience HR" />
+                    <div className="text-position">
+                      <h3 className="text-white spacer-title title-lg">Work Experience</h3>
+                      <img className="hr mb-3" src="images/signature-hr-port-01.svg" alt="Recent Works HR" width={'150px'}/>
+                    </div>
             </div>     
                
         </div>

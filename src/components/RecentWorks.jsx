@@ -53,18 +53,18 @@ const RecentWorks = () => {
     <>
       <div ref={recentDesignsContainer} className="container-fluid container-recent-works py-5" id="recentDesignsContainer my-5">
         <div className="row d-flex justify-content-between">
-          <div className="col-lg-3">
-            <h2 className="text-white text-recent-work-title">Recent Works</h2>
-            <img className="hr" src="images/signature-hr2-02.svg" alt="Recent Works HR" />
-
+          <div className="col-lg-5">
+            <div className="text-position">
+            <h2 className="text-white title-lg">Recent Works</h2>
+            <img className="hr mb-5" src="images/signature-hr-port-01.svg" alt="Recent Works HR" width={'150px'}/>
+            </div>
             <ul ref={workList} className="ul-recent-designs text-white list-unstyled work-list d-lg-block d-none">
-              <li id="work1.gif">Modular Component Design</li>
               <li id="work2.gif">Component Integration</li>
+              <li id="work1.gif">Modular Component Design</li>
               <li id="work3.gif">GSAP Timeline Reversal</li>
               <li id="work4.gif">Creative Experience</li>
              
             </ul>
-
 
             {/* Accordion Start  */}
             <Accordion className="d-lg-none d-block py-5" defaultActiveKey="0">

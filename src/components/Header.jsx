@@ -128,9 +128,7 @@ const Header = () => {
                   <div className="menu-link">
                   <a href="/images/2023EdwardGSingleton.pdf" >Resume</a>
                     </div>
-                  <div className="menu-link">
-                    <a href="mailTo:edwardtonnn@gmail.com">Lets Talk</a>
-                    </div>
+                  
                 </div>
               </div>
               <div className="menu-right">
@@ -143,7 +141,7 @@ const Header = () => {
                         <li>Edward Giovannie Singleton</li>
                         <li>Los Angeles, California</li>
                         <li><a href="tel:323-365-7776">+1(323)365-7776</a></li>
-                        <li><a href="mailto:edwardtonnn@gmail.com">Edwardtonnn@gmail.com</a></li>
+                        <li><a href="mailto:edwardtonnn@gmail.com">Send Email</a></li>
                        
                        
                     </ul>

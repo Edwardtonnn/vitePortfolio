@@ -66,14 +66,14 @@ function Homepage() {
             <div className="container-fluid container-abt d-flex justify-content-center pb-5">
                 <div className="row d-flex justify-content-around">
                     <div className="col-lg-4 container-abt-info d-flex align-items-center flex-column justify-content-center ">
-                        <h2 className="text-white">About Me</h2>
-                        <img className="hr-abt mb-3" src="images/signature-hr-01.svg" alt="hr" width={'150px'}/>
+                        <h2 className="text-white title-lg">About Me</h2>
+                        <img className="hr mb-5" src="images/signature-hr-port-01.svg" alt="signature" width={'150px'}/>
                         <p className="text-white">As a multidisciplinary professional, I specialize in crafting sophisticated, typography-centric designs and delivering seamless web experiences. With over 6 years of experience using Adobe Suite, including Photoshop, Illustrator, Adobe XD, and Premiere Pro, I have honed my expertise in design and development. My technical proficiency spans design principles, HTML, CSS, JavaScript, command-line operations, React, and WordPress. I am able to construct completely custom WordPress themes and develop React applications from the ground up. I live in Los Angeles with my dogs, Theo and Simon. During my free time you can find me salsa dancing somewhere in Los Angeles. Discover more about my professional journey at <a href="https://edwardtonnn.com/" target="_blank">Edwardtonnn.com</a>
                         </p>
 
                     </div>
                     <div className="col-lg-6 container-abt-graphic d-flex justify-content-center align-content-center">
-       <img className="img-fluid abt-gif my-5" width="100%" height="auto" src="/images/work4.gif" alt="" />       
+       <img className="img-fluid abt-gif my-5" width="100%" height="auto" src="/images/work1.gif" alt="" />       
                     </div>
                 </div>     
             </div>

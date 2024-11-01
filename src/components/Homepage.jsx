@@ -31,7 +31,7 @@ function Homepage() {
                         </div>
                     </div>
                     <div className="col-lg-8">
-                        <h1 className="text-white mb-3">Front-End Developer</h1>
+                        <h1 className="text-white mb-3">Test Front-End Developer</h1>
                         <p className="text-white text-intro-p mb-3">Hey there! Thanks for checking out my portfolio. I am a Front-End Developer &amp; Designer who works with HTML, CSS, JavaScript &amp; Adobe Suite to create stunning websites and graphic assets.</p>
                         <div className="btn-container">
                             

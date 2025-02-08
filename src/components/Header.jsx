@@ -94,7 +94,10 @@ const Header = () => {
       <div className="row py-4">
         <div className="col-6">
         <Link to="/" onClick={ScrollToTop}>
-          <span className="logo"><img src="images/logo.svg" alt="Signature" width="200px" /></span>
+          <span className="logo">
+            <p className="text-white text-primary">@Edwardtonnn</p>
+            {/* <img src="images/abbreviatedSignatureWhite.svg" alt="Signature" width="100px" /> */}
+            </span>
         </Link>
         </div>
         {/* Contains Menu Open and Menu Close  */}
@@ -111,7 +114,7 @@ const Header = () => {
                   <div className="menu-link">
                     <Link to="/" onClick={ScrollToTop}>Home</Link>
                     </div>
-                  <div className="menu-link">
+                  <div className="menu-link link">
                     <span>Portfolio</span>
                     </div>
                   <div className="sub-items">

@@ -1,0 +1,52 @@
+
+// accordion.scss
+
+.accordion {
+  border-radius: 4px;
+
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;    
+    font-weight: bold;
+    position: relative;
+    max-width:325px;
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    &::after{
+      content: "";
+      position:absolute;
+      height:2px;
+      width:0;
+      left:0;
+      bottom:-10px;
+      transition: .3s ease;
+      border-radius:15px;
+      background-color:white;
+      box-shadow: $shadow;
+    }
+    &:hover:after{
+      width:100%;
+    }
+
+  }
+
+  .icon {
+    transition: transform 0.2s ease;
+    margin-right:10px;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    // overflow: hidden;
+    transition: max-height 0.3s ease;
+
+    p {
+      margin: 20px 0 15px 0;
+      box-sizing:content-box!important;
+    }
+  }
+}
